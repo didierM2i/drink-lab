@@ -1,0 +1,318 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>M2i Drink - Concevez vos canettes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="100">
+        <div class="">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="navBrand" class="navbar-brand" href="#"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span>M2i Drink</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#nosRecettes">Nos recettes</a></li>
+              <li><a href="#nosReferences">Nos références</a></li>
+              <li><a href="test.html">Nous contacter</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="hero" class="container-fluid">
+      <div id="title" class="center-block">
+        <span class="glyphicon glyphicon-glass" aria-hidden="true"></span><h1>M2i Drink</h1>
+      </div>
+      <h3 >Découvrez nos boissons énergisantes!</h3>
+      <p>
+        <a id="animation"  href="#" role="button"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </a>
+      </p>
+      <video autoplay loop id="background_video_2"  id="background_container">
+        <source src="vid/mp4/Pour.mp4" type="video/mp4">
+        <source src="vid/webm/Pour.webm" type="video/webm">
+        <source src="vid/ogv/Pour.ogv" type="video/ogv">
+      </video>
+    </div>
+
+    <div id="nosRecettes">
+      <div  class="container">
+        <!-- Example row of columns -->
+        <h2 class="text-center text-uppercase">nos recettes</h2>
+        <div class="row">
+          <div id="energy" class="col-md-4 text-right ">
+            <span class="badge text-uppercase energie">énergisante</span>
+          </div>
+          <!-- <div class="col-md-4"></div> -->
+          <div id="desalter" class="col-md-4 col-md-offset-4">
+            <span class="badge text-uppercase desalterante">désaltérante</span>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-4">
+            <div class="thumbnail recette un">
+              <h3 class="text-capitalize">original<span id="upDown1" class="text-right pull-right"><i class="fa fa-bolt" aria-hidden="true"></i> </span></h3>
+              <hr>
+              <p id="original" class="energy nrjNonDisponible">Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+              <p>
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">
+                  Plus d'infos
+                </button>
+                <!-- <button class="btn btn-danger pull-right buttEnergy choix" data-value="original">
+                  sélectionner
+                </button> -->
+                <span class="pull-right">
+                  <label for="">sélectionner</label>
+                  <input id="checkbox1" type="checkbox" name="opt1" value="original">
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail recette deux">
+              <h3 class="text-capitalize">mojito<i id="upDown2" class="fa fa-bolt pull-right" aria-hidden="true"></i></h3>
+              <hr>
+              <p id="mojito" class="energy">Boisson énergisante gazeuse, saveur mojito à la caféine et sans alcool.</p>
+              <p>
+                <button type="button" class="btn d-inline-block" data-toggle="modal" data-target="#myModal2">
+                  Plus d'infos
+                </button>
+                <!-- <form action="" class="d-inline-block pull-right buttEnergy choix"> -->
+                <span class="pull-right">
+                  <label for="">sélectionner</label>
+                  <input id="checkbox2" type="checkbox" name="opt2" value="mojito">
+                </span>
+                <!-- </form> -->
+                <!-- <button class="btn  " data-value="mojito">
+                  sélectionner
+                </button> -->
+              </p>
+            </div>
+         </div>
+          <div class="col-md-4">
+            <div class="thumbnail recette trois">
+              <h3  class="text-capitalize">tropical<i id="upDown3" class="fa fa-snowflake-o pull-right" aria-hidden="false"></i></h3>
+              <hr>
+              <p id="tropical" class="desalterantes">Boisson énergisante gazeuse, aux fruits, taurine, caféine et extrait de gingembre.</p>
+              <p>
+              <button type="button" class="btn" data-toggle="modal" data-target="#myModal3">
+                Plus d'infos
+              </button>
+              <!-- <button class="btn btn-danger pull-right buttDesalter choix" data-value="tropical">
+                sélectionner
+              </button> -->
+              <span class="pull-right">
+                <label for="">sélectionner</label>
+                <input id="checkbox3" type="checkbox" name="opt3" value="tropical">
+              </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"><h3>tropical</h3></h4>
+            </div>
+            <div class="modal-body">
+              <i class="fa fa-snowflake-o pull-right" class="pull-right" aria-hidden="false"></i>
+              <p>Boisson énergisante gazeuse, aux fruits, taurine, caféine et extrait de gingembre.</p>
+              <p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    <div class="container-fluid text-center" id="choix">
+      <h4>Votre choix :</h4>
+      <p id="boissonChoisie">Boisson sélectionnée</p>
+      <ul >
+        <li class="text-capitalize" id="choixClient">Aucune</li>
+      </ul>
+    </div>
+
+    <div id="nosReferences" >
+      <div class="container">
+      <!-- Example row of columns -->
+      <h2 class="text-center text-uppercase">nos références</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <!-- Right-aligned media object -->
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">cafés, hôtels, restaurants</h4>
+            </div>
+            <div class="media-right">
+              <img src="img/references/chr.png" class="media-object img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Right-aligned media object -->
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">marques</h4>
+            </div>
+            <div class="media-right">
+              <img src="img/references/marques.png" class="media-object img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Right-aligned media object -->
+          <div class="media">
+            <div class="media-body">
+              <h4 class="media-heading">associations, écoles</h4>
+            </div>
+            <div class="media-right">
+              <img src="img/references/asso.png" class="media-object img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- /container -->
+    </div>
+
+    <div id="monSlider" class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/carousel-1.jpg" alt="Chania" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Le meilleur Morito de France.</h3>
+                <p>citron et menthe d'une qualité exceptionnelle pour une boisson parfaite.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/carousel-2.jpg" alt="Chania" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Le meilleur Morito de France.</h3>
+                <p>citron et menthe d'une qualité exceptionnelle pour une boisson parfaite.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/carousel-3.jpg" alt="Flower" width="100%" height="auto">
+              <div class="carousel-caption">
+                <h3>Le meilleur Morito de France.</h3>
+                <p>citron et menthe d'une qualité exceptionnelle pour une boisson parfaite.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <footer id="contact">
+        <section class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <form id="contacter" class="form-horizontal" action="form_contact.php" method="post">
+                <div class="col-sm-offset-3 col-sm-8">
+                  <h3>Nous contacter?</h3>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                  <div class="col-sm-8">
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="labelVisiteur" class="col-sm-3 control-label">Objet de la demande</label>
+                  <div class="col-sm-8">
+                    <select name="visiteur" id="labelVisiteur">
+                        <option value="part" selected>Particulier</option>
+                        <option value="prof">Professionnel</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputDemande" class="col-sm-3 control-label">Votre demande</label>
+                  <div class="col-sm-8">
+                    <textarea class="form-control" id="inputDemande" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-8 text-center">
+                    <button type="submit" class="btn btn-default text-capitalize">Envoyer</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="localisation" class="col-md-5">
+              <h3>Où sommes nous?</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.98285762279!2d3.073280240214001!3d50.6460095095142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32a7328783e49%3A0x456a8a96b2b14da5!2s105+Avenue+de+la+R%C3%A9publique%2C+59110+La+Madeleine!5e0!3m2!1sfr!2sfr!4v1522519651220"
+                width="500" height="315" frameborder="0" style="border:0">
+              </iframe>
+            </div>
+          </div>
+        </section>
+        <p>&copy; Didier CLIN - 2018</p>
+      </footer>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+        <script src="js/vendor/jquery-min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
